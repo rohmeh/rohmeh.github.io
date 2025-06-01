@@ -1,11 +1,27 @@
-
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
 }
 
+.navbar-brand {
+    font-family: 'Inter', serif !important;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #071013; /* Match the color if needed */
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: #8C1515 !important; /* Default color */
+    font-family: 'Ubuntu Mono', serif; /* Use secondary font */
+    text-decoration: none; /* No underline by default */
+    padding: 0; /* Remove extra padding */
+    margin: 0 10px; /* Add spacing between links */
+}
+
 .navbar-nav .nav-link:hover {
-    color: #2c3e50; /* Slightly darker color for hover */
+    color: black; /* Hover color */
+    text-decoration: none; /* No underline on hover */
 }
 
 
@@ -275,4 +291,34 @@ h2 code {
 
 .read_more {
     margin-top: 1%;
+}
+
+/* Default styles for all screen sizes */
+#profile_picture {
+    width: 20%;
+    height: auto;
+    margin-top: 1%;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    #profile_picture {
+        width: 40%; /* Larger size for mobile */
+        margin-top: 2%; /* Adjust spacing */
+    }
+    .introduction {
+        margin-top: 20px;
+    }
+
+    /* Stack Interests and Academia sections vertically */
+    .about.row.w-100 > .col {
+        flex: 0 0 100%; /* Make each column take up full width */
+        max-width: 100%; /* Ensure they stack vertically */
+    }
+
+    /* Add vertical space above the footer */
+    footer.mt-auto {
+        padding-top: 20px;
+    }  
+
 }
