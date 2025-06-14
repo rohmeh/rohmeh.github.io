@@ -7,7 +7,7 @@ Welcome to my GitHub Website! This repository serves as a showcase of my profess
 
 Feel free to reach out or connect with me via:
 
-- **Email**: [rohan21@iiserb.ac.in]
+- **Email**: [romehraa@gmail.com]
 - **LinkedIn**: [https://www.linkedin.com/in/mehra-rohan]
 
 ---
