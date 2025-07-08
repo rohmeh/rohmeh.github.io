@@ -1,0 +1,425 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #071013;
+}
+
+
+.navbar-brand {
+    font-family: 'Inter', serif !important;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #071013; 
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: #8C1515 !important; /* Default color */
+    font-family: 'Ubuntu Mono', serif; /* Use secondary font */
+    text-decoration: none; /* No underline by default */
+    padding: 0; /* Remove extra padding */
+    margin: 0 10px; /* Add spacing between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: black; /
+    text-decoration: none; 
+}
+
+a {
+    color: #8C1515;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #050517;
+}
+
+h2 code {
+  font-family: Consolas,"courier new";
+  /* background-color: #f1f1f1; */
+  background-color:  #8C1515;;
+  color: white;
+  padding: 2px;
+}
+
+#TableOfContents ul {
+    margin: auto;
+    padding-left: 2%;
+    padding-top: 0%;
+}
+#TableOfContents {
+    margin: auto;
+}
+
+.toc {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.h-100 {
+    margin: auto;
+}
+
+.w-100 {
+    margin: auto;
+}
+
+.main_color  {
+    color: #8C1515;
+}
+
+.secondary_color {
+    color: #071013;
+}
+
+.email_color {
+    color: #071013;
+}
+
+.secondary_font {
+    font-family: 'Ubuntu Mono', serif;
+}
+
+.section-subtitle {
+    font-family: 'Ubuntu Mono', serif;
+}
+
+#profile_picture  {
+    width: 20%;
+    height: auto;
+    margin-top: 1%;
+}
+
+.about #full_name {
+    font-size: x-large;
+}
+
+.about .affiliations #title {
+    padding-right: .5%;
+}
+
+.about .affiliations #name {
+    padding-right: .5%;
+}   
+
+.about #email {
+    font-family: 'Ubuntu Mono', serif; 
+    margin: auto;
+}
+
+.about .socials {
+    font-size: small;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.about .socials a {
+    margin-left: .6%;
+}
+
+.about #blog_logo {
+    font-size: smaller;
+    margin-top: .2%;
+}
+
+.about .academia .degree_major {
+    font-size: small;
+}
+
+.about .academia .other_info {
+    font-size: small;
+}
+
+.course {
+    margin-top: 1%;
+}
+
+
+.section-title {
+    margin-top: 2.5%;
+}
+
+.copy_right {
+    font-size: small;
+}
+.pagination {
+    margin: auto;
+}
+
+.pagination a  {
+    color: #8C1515;
+    size: 100%;
+}
+
+.pagination .page_link  {
+    font-weight: bold;
+    background-color: #8C1515;
+}
+
+.page-item.active .page-link {
+    border-color: black;
+    background-color: #8C1515;
+    font-weight: bold;
+    color: white;
+}
+
+.tags_navigation {
+    margin-bottom: .5%;
+}
+
+.tags_navigation .tag {
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+    background-color: #8C1515;
+    color: aliceblue;
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+.tags_navigation .tag:hover {
+    text-decoration: underline;
+}
+
+.blog_nav_bar {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.blog_nav_bar .item {
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+    background-color: #8C1515;
+    color: aliceblue;
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+.reading_time {
+    font-family: 'Ubuntu Mono', serif;
+    margin-top: -.5%;
+    margin-bottom: 1%;
+}
+
+.read_more {
+    margin-top: 1%;
+}
+
+/* Default styles for all screen sizes */
+#profile_picture {
+    width: 20%;
+    height: auto;
+    margin-top: 1%;
+}
+
+.controls {
+  background: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.controls div {
+  margin: 8px 0;
+}
+
+.controls label {
+  display: inline-block;
+  width: 80px;
+}
+
+.controls input[type="range"] {
+  width: 150px;
+  vertical-align: middle;
+}
+
+#canvas {
+  background: white;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    #profile_picture {
+        width: 40%; 
+        margin-top: 12%; 
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-top: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .introduction {
+        margin-top: 30px;
+    }
+
+    /* Stack Interests and Academia sections vertically */
+    .about.row.w-100 > .col {
+        flex: 0 0 100%; /* Make each column take up full width */
+        max-width: 100%; /* Ensure they stack vertically */
+    }
+
+    footer.mt-auto {
+        padding-top: 20px;
+    }  
+
+    .knn-container {
+        padding: 10px;
+    }
+    
+    #knnCanvas {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 400px;
+    }
+    
+    .col-lg-4.order-lg-2.order-1 {
+        margin-bottom: 20px;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+    }
+    .controls .form-group {
+        max-width: 100%;
+    }
+    
+    .controls {
+        padding: 15px;
+    }
+}
+
+/* ===== KNN Demo Styles ===== */
+.knn-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#knnCanvas {
+    border: 1px solid #e6e6e6;
+    background: white;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.controls {
+    background-color: #f8f9fa;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-family: 'Ubuntu Mono', serif;
+    color: #071013;
+}
+
+.controls .form-control {
+    border: 1px solid #e6e6e6;
+}
+
+.controls .form-control:focus {
+    border-color: #8C1515;
+    box-shadow: 0 0 0 0.2rem rgba(140, 21, 21, 0.25);
+}
+
+.controls .badge {
+    background-color: #8C1515;
+    color: white;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+.btn-knn {
+    background-color: #8C1515;
+    color: white;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.btn-knn:hover {
+    background-color: #6d0f0f;
+    color: white;
+}
+
+.description {
+    background-color: #f8f9fa;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* ===== KNN Demo Control Center Alignment ===== */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.controls .form-group {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.controls .form-control {
+    width: 100%;
+    text-align: center;
+}
+
+/* Specific style for the select dropdown */
+.controls select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238C1515'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    padding-right: 2rem;
+}
+
+/* Range input styling */
+.controls input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #e6e6e6;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #8C1515;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
