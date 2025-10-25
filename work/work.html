@@ -35,7 +35,7 @@
           <a class="nav-link active" href="/index.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/work/work.html">Work</a>
+          <a class="nav-link active" href="/work/work.html">Research</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="/miscellaneous/misc.html">Misc</a>
@@ -60,28 +60,34 @@
                     </h3>
                     <div class="publication-meta" style="font-family: 'Inter', sans-serif; font-size: 0.97rem; color: #495057;">
                         <strong>Rohan Mehra</strong>, Alexandre Riffard, Mathieu Labussière, Pierre Duthon, Romuald Aufrère<br>
-                        <em>IEEE/CVF International Conference on Computer Vision (ICCV) Workshops</em>, 2025
+                        <em>Proceedings of IEEE/CVF International Conference on Computer Vision (ICCV) Workshops</em>, 2025
                     </div>
                     <div>
-                        <button class="abstract-btn" onclick="toggleAbstract('abstract1')">Abstract</button>
-                        <span class="upcoming-tag">[upcoming]</span>
+                        <button class="abstract-btn" onclick="window.open('https://openaccess.thecvf.com/content/ICCV2025W/MIRA/html/Mehra_Would_SWIR_modality_help_for_detection_and_segmentation_in_harsh_ICCVW_2025_paper.html', '_blank')">Paper</button>
+                        <button class="abstract-btn" onclick="window.open('/docs/2025-ICCVW-Presentation.pdf', '_blank')">Presentation</button>
+                        <button class="abstract-btn" onclick="toggleAbstract('bibtex1')">BibTeX</button>
                     </div>
-                    <div id="abstract1" class="abstract-content">
-                        In the context of road perception for autonomous vehicles, short-wave infrared (SWIR) has opened up new perspectives beyond the visible spectrum, which is prone to performance degradation in harsh weather conditions like fog, rain and dust. This paper aims to analyze the feasibility of using SWIR images to enhance object detection and segmentation in such weather conditions.
-                        In our experiments, we used data obtained from three different cameras – including two SWIR technologies and a conventional visible camera – in different weather conditions. The conditions include a clear day for reference, rain at different rainfall rates, and fog at different visibility ranges. We explored the performance of several deep learning algorithms, originally trained on images from visible domain applied directly to SWIR images.
-                        Quantitative and qualitative analyses for detection and segmentation were conducted. When applied to SWIR modalities, the algorithms prove to perform comparatively to visible in the reference case and to improve detection and segmentation in harsh weather cases.
+                    <div id="bibtex1" class="abstract-content">
+<pre>@InProceedings{Mehra_2025_ICCV,
+    author    = {Mehra, Rohan and Riffard, Alexandre and Labussière, Mathieu and Duthon, Pierre and Aufrère, Romuald},
+    title     = {Would SWIR modality help for detection and segmentation in harsh weather conditions? An experimental study.},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2025},
+    pages     = {2211-2219}
+}</pre>
                     </div>
                 </div>
                 
                 <!-- Projects Section -->
-                <h1 class="main_color mt-5" style="font-family: 'Inter', sans-serif; font-size: 2rem; font-weight: 600; margin-bottom: 20px;">
+                <!--<h1 class="main_color mt-5" style="font-family: 'Inter', sans-serif; font-size: 2rem; font-weight: 600; margin-bottom: 20px;">
                     Projects
                 </h1>
                 <p style="font-family: 'Inter', sans-serif; font-size: 1.2rem; color: #6c757d; margin: 0;">
                     Will be updated soon!
-                </p>
+                </p>-->
                 <p style="font-family: 'Inter', sans-serif; font-size: 1.2rem; color: #6c757d; margin: 0;">
-                    <em>(Visit <a href="https://rohmeh.github.io/docs/CV_Rohan_Mehra.pdf">CV</a>)</em>
+                    <em>Find all my projects and experiences in <a href="/docs/CV_Rohan_Mehra.pdf" target="_blank">CV</a>!</em>
                 </p>
             </div>
         </div>
