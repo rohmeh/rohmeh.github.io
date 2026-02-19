@@ -299,6 +299,7 @@ h2 code {
 }
 
 /* Laptop/Desktop (Large Screens): Restrict to 66% */
+/* Laptop/Desktop (Large Screens): Restrict to 66% */
 @media (min-width: 992px) {
     #navbar-container {
         max-width: 854px; /* 864px - 30px */

@@ -33,14 +33,6 @@
 
 <body class="container d-flex flex-column min-vh-100">
 
-    <!-- Add this style to account for fixed navbar -->
-    <style>
-        body {
-            padding-top: 70px;
-            /* Adjust this value based on your navbar height */
-        }
-    </style>
-
     <nav class="navbar navbar-expand-lg navbar-light fixed-top"
         style="background-color: #ffffff; border-bottom: 1px solid #e6e6e6; padding: 10px;">
         <div class="container-fluid mx-auto" id="navbar-container">
@@ -70,78 +62,83 @@
 
     <div class="row w-100">
         <div class="col-12 mx-auto" style="max-width: 90%;">
-            <div class="about row w-100">
-                <div class="row w-100 justify-content-center">
-                    <img class="rounded-circle  " src="images/Rohan-Website.jpeg" alt="profile_picture"
-                        id="profile_picture" />
-                </div>
-
-                <div class=" row w-100 justify-content-center main_color" id="full_name">
-                    Rohan Mehra
-                </div>
-
-                <div class="affiliations row w-100 justify-content-center">
+            <div class="about row w-100 desktop-split">
+                <div class="col-12 col-md-5 order-1 order-md-2">
                     <div class="row w-100 justify-content-center">
+                        <img class="rounded-circle  " src="images/Rohan-Website.jpeg" alt="profile_picture"
+                            id="profile_picture" />
+                    </div>
 
-                        <div class="row w-100 justify-content-center" id="title-name">
-                            <span class="main_color" id="title">
-                                MS Student,
-                            </span>
-                            <span id="name" class="text-muted">
-                                INP-ISIMA
-                            </span>
+                    <div class=" row w-100 justify-content-center main_color" id="full_name">
+                        Rohan Mehra
+                    </div>
+
+                    <div class="affiliations row w-100 justify-content-center">
+                        <div class="row w-100 justify-content-center">
+
+                            <div class="row w-100 justify-content-center" id="title-name">
+                                <span class="main_color" id="title">
+                                    MS Student,
+                                </span>
+                                <span id="name" class="text-muted">
+                                    INP-ISIMA
+                                </span>
+                            </div>
+                            <div class="row w-100 justify-content-center text-muted" id="email">
+                            </div>
                         </div>
-                        <div class="row w-100 justify-content-center text-muted" id="email">
+                    </div>
+
+                    <div class="socials row w-100  justify-content-center">
+                        <div class="row w-100 justify-content-center">
+                            <a class="main_color" rel="me" href="mailto:rohan.mehra@etu.uca.fr" target="_blank">
+                                <i data-feather="mail"></i>
+                            </a>
+
+                            <a class="main_color" rel="me" href='https://linkedin.com/in/mehra-rohan' target="_blank">
+                                <i data-feather="linkedin"></i>
+                            </a>
+
+                            <a class="main_color" rel="me" href='https://github.com/rohmeh' target="_blank">
+                                <i data-feather="github"></i>
+                            </a>
+
+                            <a class="main_color" rel="me"
+                                href='https://scholar.google.com/citations?user=y6LmKgsAAAAJ&hl=en' target="_blank">
+                                <i class="ai ai-google-scholar" style="font-size: 2em;"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="socials row w-100  justify-content-center">
-                    <div class="row w-100 justify-content-center">
-                        <a class="main_color" rel="me" href="mailto:rohan.mehra@etu.uca.fr" target="_blank">
-                            <i data-feather="mail"></i>
-                        </a>
-
-                        <a class="main_color" rel="me" href='https://linkedin.com/in/mehra-rohan' target="_blank">
-                            <i data-feather="linkedin"></i>
-                        </a>
-
-                        <a class="main_color" rel="me" href='https://github.com/rohmeh' target="_blank">
-                            <i data-feather="github"></i>
-                        </a>
-
-                        <a class="main_color" rel="me"
-                            href='https://scholar.google.com/citations?user=y6LmKgsAAAAJ&hl=en' target="_blank">
-                            <i class="ai ai-google-scholar" style="font-size: 2em;"></i>
-                        </a>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <div class="introduction row w-100 text-justify">
+                        <div class="col w-100 text-justify">
+                            <!--<p><em>Université I am actively looking for <strong>Master&rsquo;s Opportunity</strong>, with a particular interest in <strong>Image Processing</strong>, especially at the intersection of non-conventional sensing modalities.</em></p>-->
+                            <!-- <p>Hey! I'm Rohan.</p> -->
+                            <p> I'm a Computer Science Master&rsquo;s Student at the <a
+                                    href="https://www.isima.fr/en/home/">INP-ISIMA, Université Clermont Auvergne</a>. I
+                                am
+                                advised by <a href="https://mathlabu.github.io/">Dr. Mathieu
+                                    Labussière</a> as part of the <a
+                                    href="http://www.institutpascal.uca.fr/index.php/en/comsee">Institut Pascal</a> lab,
+                                where where my project is focused on short-wave infrared (SWIR) camera's adaptation to
+                                autonomous driving application. </p>
+                            I obtained my Bachelor&rsquo;s degree from the <a href="https://iiserb.ac.in">Indian
+                                Institute of Science Education and Research (IISER) Bhopal, India</a> in the <a
+                                href="https://eecs.iiserb.ac.in/">Department of Electrical Engineering and Computer
+                                Science</a>. I conducted my BS project under the supervison of <a
+                                href="https://sites.google.com/iiserb.ac.in/arpit-sharma/home">Dr. Arpit Sharma</a>,
+                            focusing on using zero-shot learning approaches for requirement classification. Previously,
+                            I
+                            have also worked on Mobile Robot Manipulation under the supervision of <a
+                                href="https://www.iist.ac.in/avionics/deepak.mishra">Prof. Deepak Mishra</a> at IIST,
+                            Thiruvanathapuram.</p>
+                            <p><em>You can find my CV <a href="/docs/CV_Rohan_Mehra.pdf" target="_blank">here</a> (last
+                                    updated February 2026)</em></p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="introduction row w-100 text-justify">
-                    <div class="col w-100 text-justify">
-                        <!--<p><em>Université I am actively looking for <strong>Master&rsquo;s Opportunity</strong>, with a particular interest in <strong>Image Processing</strong>, especially at the intersection of non-conventional sensing modalities.</em></p>-->
-                        <!-- <p>Hey! I'm Rohan.</p> -->
-                        <p> I'm a Computer Science Master&rsquo;s Student at the <a
-                                href="https://www.isima.fr/en/home/">INP-ISIMA, Université Clermont Auvergne</a>. I am
-                            advised by <a href="https://mathlabu.github.io/">Dr. Mathieu
-                                Labussière</a> as part of the <a
-                                href="http://www.institutpascal.uca.fr/index.php/en/comsee">Institut Pascal</a> lab,
-                            where where my project is focused on short-wave infrared (SWIR) camera's adaptation to
-                            autonomous driving application. </p>
-                        I obtained my Bachelor&rsquo;s degree from the <a href="https://iiserb.ac.in">Indian
-                            Institute of Science Education and Research (IISER) Bhopal, India</a> in the <a
-                            href="https://eecs.iiserb.ac.in/">Department of Electrical Engineering and Computer
-                            Science</a>. I conducted my BS project under the supervison of <a
-                            href="https://sites.google.com/iiserb.ac.in/arpit-sharma/home">Dr. Arpit Sharma</a>,
-                        focusing on using zero-shot learning approaches for requirement classification. Previously, I
-                        have also worked on Mobile Robot Manipulation under the supervision of <a
-                            href="https://www.iist.ac.in/avionics/deepak.mishra">Prof. Deepak Mishra</a> at IIST,
-                        Thiruvanathapuram.</p>
-                        <p><em>You can find my CV <a href="/docs/CV_Rohan_Mehra.pdf" target="_blank">here</a> (last
-                                updated February 2026)</em></p>
-                    </div>
-                </div>
-
             </div>
 
             <div class="about row w-100 mt-2">
@@ -238,9 +235,10 @@
 
                 </div>
             </div>
-
-
         </div>
+
+
+    </div>
 
     </div>
     </div>

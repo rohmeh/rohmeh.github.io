@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
-    padding-top: 90px;
+    padding-top: 85px;
 }
 
 
@@ -278,4 +278,37 @@ h2 code {
 .text-justify {
     text-align: justify;
 }
+
+/* ===== Mobile content width only (navbar unchanged) ===== */
+@media (max-width: 768px) {
+
+    /* Reduce container padding for page body */
+    body.container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* Expand main content wrapper */
+    .col-12.mx-auto {
+        max-width: 98% !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .desktop-split #profile_picture {
+        width: 20vw;
+        max-width: 220px;
+    }
+    .desktop-split {
+        align-items: center;
+    }
+        .desktop-split > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
 
