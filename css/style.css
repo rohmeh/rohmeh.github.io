@@ -1,6 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
+    padding-top: 90px;
 }
 
 
@@ -247,3 +248,26 @@ h2 code {
     }  
 
 }
+
+/* 2. Navbar Container Logic */
+/* Default (Mobile): Full width */
+#navbar-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Laptop/Desktop (Large Screens): Restrict to 66% */
+@media (min-width: 992px) {
+    #navbar-container {
+        max-width: 66%; 
+    }
+}
+
+/* 3. Helper to align text nicely (optional utility) */
+.text-justify {
+    text-align: justify;
+}
+
