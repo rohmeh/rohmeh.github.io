@@ -1,8 +1,16 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
-    padding-top: 85px;
+    padding-top: 80px;
 }
+
+/* ===== Mobile navbar offset ===== */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+}
+
 
 
  .navbar-brand {
@@ -303,9 +311,29 @@ h2 code {
     .desktop-split {
         align-items: center;
     }
-        .desktop-split > div {
+    .desktop-split > div {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+/* ===== Fix large screen vertical offset ===== */
+/* @media (min-width: 1400px) {
+    .about.desktop-split {
+        margin-top: -25px;
+    }
+}  */
+
+/* ===== Fix mobile About paragraph padding ===== */
+@media (max-width: 768px) {
+    .introduction.row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .introduction.row > .col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
