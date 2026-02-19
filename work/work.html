@@ -59,31 +59,55 @@
                         style="font-family: 'Inter', sans-serif; font-size: 2rem; font-weight: 600; margin-bottom: 30px;">
                         Publications
                     </h1>
+                    <p class="publication-hint">
+                        <em>(Hover over the image to magnify it)</em>
+                    </p>
 
-                    <div class="publication-item">
-                        <h3
-                            style="font-family: 'Inter', sans-serif; font-size: 1.23rem; font-weight: 500; line-height: 1.4;">
-                            Would SWIR modality help for detection and segmentation in harsh weather conditions? An
-                            experimental study.
-                        </h3>
-                        <div class="publication-meta"
-                            style="font-family: 'Inter', sans-serif; font-size: 0.97rem; color: #495057;">
-                            <strong>Rohan Mehra</strong>, Alexandre Riffard, Mathieu Labussière, Pierre Duthon, Romuald
-                            Aufrère<br>
-                            <em>Proceedings of IEEE/CVF International Conference on Computer Vision (ICCV)
-                                Workshops</em>, 2025
+
+                    <div class="publication-item row align-items-center mb-4">
+
+                        <!-- LEFT: Paper Image -->
+                        <div class="col-3 col-md-3 mb-3 mb-md-0">
+                            <div class="publication-image-container popout-wrapper">
+                                <img src="/images/Star-SVS-YOLO.png" alt="SWIR ICCVW 2025" class="publication-image">
+
+                                <!-- Enlarged preview -->
+                                <div class="image-preview">
+                                    <img src="/images/Star-SVS-YOLO.png" alt="Preview">
+                                </div>
+                            </div>
+
                         </div>
-                        <div>
-                            <button class="abstract-btn"
-                                onclick="window.open('https://openaccess.thecvf.com/content/ICCV2025W/MIRA/html/Mehra_Would_SWIR_modality_help_for_detection_and_segmentation_in_harsh_ICCVW_2025_paper.html', '_blank')">Paper</button>
-                            <button class="abstract-btn"
-                                onclick="window.open('/docs/2025-ICCVW-Presentation.pdf', '_blank')">Presentation</button>
-                            <button class="abstract-btn"
-                                onclick="window.open('https://github.com/comsee-research/swir-iccvw-2025', '_blank')">Code</button>
-                            <button class="abstract-btn" onclick="toggleAbstract('bibtex1')">BibTeX</button>
-                        </div>
-                        <div id="bibtex1" class="abstract-content">
-                            <pre>@InProceedings{Mehra_2025_ICCV,
+
+                        <!-- RIGHT: Paper Content -->
+                        <div class="col-9 col-md-9">
+                            <h3 class="publication-title">
+                                Would SWIR modality help for detection and segmentation in harsh weather conditions? An
+                                experimental study.
+                            </h3>
+
+                            <div class="publication-meta">
+                                <strong>Rohan Mehra</strong>, Alexandre Riffard, Mathieu Labussière, Pierre Duthon,
+                                Romuald Aufrère<br>
+                                <em>Proceedings of IEEE/CVF International Conference on Computer Vision (ICCV)
+                                    Workshops</em>, 2025
+                            </div>
+
+                            <div class="mt-2">
+                                <button class="abstract-btn"
+                                    onclick="window.open('https://openaccess.thecvf.com/content/ICCV2025W/MIRA/html/Mehra_Would_SWIR_modality_help_for_detection_and_segmentation_in_harsh_ICCVW_2025_paper.html', '_blank')">Paper</button>
+
+                                <button class="abstract-btn"
+                                    onclick="window.open('/docs/2025-ICCVW-Presentation.pdf', '_blank')">Presentation</button>
+
+                                <button class="abstract-btn"
+                                    onclick="window.open('https://github.com/comsee-research/swir-iccvw-2025', '_blank')">Code</button>
+
+                                <button class="abstract-btn" onclick="toggleAbstract('bibtex1')">BibTeX</button>
+                            </div>
+
+                            <div id="bibtex1" class="abstract-content">
+                                <pre>@InProceedings{Mehra_2025_ICCV,
     author    = {Mehra, Rohan and Riffard, Alexandre and Labussière, Mathieu and Duthon, Pierre and Aufrère, Romuald},
     title     = {Would SWIR modality help for detection and segmentation in harsh weather conditions? An experimental study.},
     booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
@@ -91,8 +115,10 @@
     year      = {2025},
     pages     = {2211-2219}
 }</pre>
+                            </div>
                         </div>
                     </div>
+
 
                     <p style="font-family: 'Inter', sans-serif; font-size: 1.2rem; color: #6c757d; margin: 0;">
                         <em>Find all my projects and experiences in <a href="/docs/CV_Rohan_Mehra.pdf"
@@ -124,6 +150,20 @@
             }
         }
     </script>
+
+    <script>
+        document.querySelectorAll('.popout-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('click', function (e) {
+
+                // Only enable toggle on touch devices
+                if (window.matchMedia("(hover: none)").matches) {
+                    this.classList.toggle('active');
+                }
+
+            });
+        });
+    </script>
+
 </body>
 
 </html>

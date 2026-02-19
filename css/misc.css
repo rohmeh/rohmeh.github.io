@@ -435,7 +435,14 @@ h2 code {
 /* Laptop/Desktop (Large Screens): Restrict to 66% */
 @media (min-width: 992px) {
     #navbar-container {
-        max-width: 66%; 
+        max-width: 854px; /* 864px - 30px */
+    }
+}
+
+/* Extra Large Screens (Desktop monitors) */
+@media (min-width: 1200px) {
+    #navbar-container {
+        max-width: 1016px; /* 1026px - 30px */
     }
 }
 

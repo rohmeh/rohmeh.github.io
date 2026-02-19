@@ -5,12 +5,13 @@ body {
 }
 
 
-.navbar-brand {
+ .navbar-brand {
     font-family: 'Inter', serif !important;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #071013; 
-}
+} 
+
 
 /* Navbar link styling */
 .navbar-nav .nav-link {
@@ -22,7 +23,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: black; /
+    color: black; 
     text-decoration: none; 
 }
 
@@ -259,10 +260,17 @@ h2 code {
     margin-left: auto;
 }
 
-/* Laptop/Desktop (Large Screens): Restrict to 66% */
+/* Laptop/Desktop (Large Screens): Account for 15px column padding */
 @media (min-width: 992px) {
     #navbar-container {
-        max-width: 66%; 
+        max-width: 854px; /* 864px - 30px */
+    }
+}
+
+/* Extra Large Screens (Desktop monitors) */
+@media (min-width: 1200px) {
+    #navbar-container {
+        max-width: 1016px; /* 1026px - 30px */
     }
 }
 
