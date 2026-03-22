@@ -451,5 +451,11 @@ h2 code {
     text-align: justify;
 }
 
+.page-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
 
 
