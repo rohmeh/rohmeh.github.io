@@ -19,7 +19,7 @@
 
     <style>
         body {
-            padding-top: 70px;
+            padding-top: 0px;
         }
     </style>
 
@@ -63,6 +63,50 @@
                         <em>(Hover over the image to magnify it)</em>
                     </p>
 
+                    <div class="publication-item row align-items-center mb-4">
+
+                        <!-- LEFT: Paper Image -->
+                        <div class="col-3 col-md-3 mb-3 mb-md-0">
+                            <div class="publication-image-container popout-wrapper">
+                                <img src="/images/Star-Yannis-RFIAP.png" alt="SWIR ICCVW 2025" class="publication-image">
+
+                                <!-- Enlarged preview -->
+                                <div class="image-preview">
+                                    <img src="/images/Star-Yannis-RFIAP.png" alt="Preview">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT: Paper Content -->
+                        <div class="col-9 col-md-9">
+                            <h3 class="publication-title">
+                                Experimental study of YOLOv8 fine-tuning for RGB-SWIR multimodal road detection 
+                            </h3>
+
+                            <div class="publication-meta">
+                                Yannis Loumouamou, Alexandre Riffard, <strong>Rohan Mehra</strong>, Mathieu Labussière<br>
+                                <em><strong>Under review</strong> at Reconnaissance des Formes, Image, Apprentissage et Perception (<strong>RFIAP</strong>)</em>, 2026
+                            </div>
+
+                            <div class="mt-2">
+                                <!-- <button class="abstract-btn"
+                                    onclick="window.open('https://openaccess.thecvf.com/content/ICCV2025W/MIRA/html/Mehra_Would_SWIR_modality_help_for_detection_and_segmentation_in_harsh_ICCVW_2025_paper.html', '_blank')">Paper</button>
+
+                                <button class="abstract-btn"
+                                    onclick="window.open('/docs/2025-ICCVW-Presentation.pdf', '_blank')">Presentation</button>
+
+                                <button class="abstract-btn"
+                                    onclick="window.open('https://github.com/comsee-research/swir-iccvw-2025', '_blank')">Code</button> -->
+
+                                <button class="abstract-btn" onclick="toggleAbstract('abs')">Abstract</button>
+                            </div>
+
+                            <div id="abs" class="abstract-content">
+    <pre style="white-space: pre-wrap; word-wrap: break-word; text-align: justify;">SWIR imaging represents a promising approach for enhancing road perception in adverse conditions, though it remains constrained by the scarcity of annotated data compared to models pre-trained in the visible spectrum. This paper presents a comparative study of adaptation strategies for YOLOv8 in the context of multi-class road infrared detection. We demonstrate that partial network freezing offers an efficiency-performance trade-off comparable to full fine-tuning, while highlighting that a structural performance gap consistently persists in favor of the visible domain. Finally, evaluating image synthesis through image-to-image translation and training on mixed datasets reveals effective strategies for mitigating the lack of real-world data, although these methods do not fully bridge the gap between modalities.</pre>
+</div>
+                            </div>
+                    </div>
 
                     <div class="publication-item row align-items-center mb-4">
 
