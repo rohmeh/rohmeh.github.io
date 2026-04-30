@@ -1,48 +1,50 @@
+
+Copy
+
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
     padding-top: 90px;
 }
-
-
+ 
+ 
 .navbar-brand {
     font-family: 'Inter', serif !important;
     font-size: 1.7rem;
     font-weight: 500;
     color: #071013; 
 }
-
+ 
 /* Navbar link styling */
 .navbar-nav .nav-link {
-    color: #8C1515 !important; /* Default color */
-    font-family: 'Ubuntu Mono', serif; /* Use secondary font */
-    text-decoration: none; /* No underline by default */
-    padding: 0; /* Remove extra padding */
-    margin: 0 10px; /* Add spacing between links */
+    color: #8C1515 !important;
+    font-family: 'Ubuntu Mono', serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0 10px;
 }
-
+ 
 .navbar-nav .nav-link:hover {
-    color: black; /
+    color: black;
     text-decoration: none; 
 }
-
+ 
 a {
     color: #8C1515;
 }
-
+ 
 a:hover {
     text-decoration: underline;
     color: #050517;
 }
-
+ 
 h2 code {
   font-family: Consolas,"courier new";
-  /* background-color: #f1f1f1; */
   background-color:  #8C1515;;
   color: white;
   padding: 2px;
 }
-
+ 
 #TableOfContents ul {
     margin: auto;
     padding-left: 2%;
@@ -51,123 +53,123 @@ h2 code {
 #TableOfContents {
     margin: auto;
 }
-
+ 
 .toc {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
-
+ 
 .h-100 {
     margin: auto;
 }
-
+ 
 .w-100 {
     margin: auto;
 }
-
+ 
 .main_color  {
     color: #8C1515;
 }
-
+ 
 .secondary_color {
     color: #071013;
 }
-
+ 
 .email_color {
     color: #071013;
 }
-
+ 
 .secondary_font {
     font-family: 'Ubuntu Mono', serif;
 }
-
+ 
 .section-subtitle {
     font-family: 'Ubuntu Mono', serif;
 }
-
+ 
 #profile_picture  {
     width: 20%;
     height: auto;
     margin-top: 1%;
 }
-
+ 
 .about #full_name {
     font-size: x-large;
 }
-
+ 
 .about .affiliations #title {
     padding-right: .5%;
 }
-
+ 
 .about .affiliations #name {
     padding-right: .5%;
 }   
-
+ 
 .about #email {
     font-family: 'Ubuntu Mono', serif; 
     margin: auto;
 }
-
+ 
 .about .socials {
     font-size: small;
     margin-bottom: 1%;
     margin-top: 1%;
 }
-
+ 
 .about .socials a {
     margin-left: .6%;
 }
-
+ 
 .about #blog_logo {
     font-size: smaller;
     margin-top: .2%;
 }
-
+ 
 .about .academia .degree_major {
     font-size: small;
 }
-
+ 
 .about .academia .other_info {
     font-size: small;
 }
-
+ 
 .course {
     margin-top: 1%;
 }
-
-
+ 
+ 
 .section-title {
     margin-top: 2.5%;
 }
-
+ 
 .copy_right {
     font-size: small;
 }
 .pagination {
     margin: auto;
 }
-
+ 
 .pagination a  {
     color: #8C1515;
     size: 100%;
 }
-
+ 
 .pagination .page_link  {
     font-weight: bold;
     background-color: #8C1515;
 }
-
+ 
 .page-item.active .page-link {
     border-color: black;
     background-color: #8C1515;
     font-weight: bold;
     color: white;
 }
-
+ 
 .tags_navigation {
     margin-bottom: .5%;
 }
-
+ 
 .tags_navigation .tag {
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
@@ -176,16 +178,16 @@ h2 code {
     padding-left: .5%;
     padding-right: .5%;
 }
-
+ 
 .tags_navigation .tag:hover {
     text-decoration: underline;
 }
-
+ 
 .blog_nav_bar {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
+ 
 .blog_nav_bar .item {
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
@@ -194,76 +196,110 @@ h2 code {
     padding-left: .5%;
     padding-right: .5%;
 }
-
+ 
 .reading_time {
     font-family: 'Ubuntu Mono', serif;
     margin-top: -.5%;
     margin-bottom: 1%;
 }
-
+ 
 .read_more {
     margin-top: 1%;
 }
-
+ 
 /* Default styles for all screen sizes */
 #profile_picture {
     width: 20%;
     height: auto;
     margin-top: 1%;
 }
-
+ 
+/* ── Abstract / BibTeX slide-in ───────────────────────────────────────────── */
 .abstract-content {
-            display: none;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 5px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
+    max-height: 0;
+    overflow: hidden;
+    /* smooth slide */
+    transition: max-height 0.80s ease, padding 0.65s ease, opacity 0.35s ease;
+    padding: 0 15px;
+    opacity: 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ 
+.abstract-content.open {
+    max-height: 1200px;   /* large enough for any abstract */
+    padding: 15px;
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+ 
 .abstract-btn {
-            background-color: transparent;
-            border: 1px solid #6c757d;
-            color: #6c757d;
-            padding: 3px 8px;
-            font-size: 0.8rem;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: all 0.3s;
-            margin-top: 4px;
-            display: inline-block;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 4px;
+    display: inline-block;
 }
+ 
 .abstract-btn:hover {
-            background-color: #6c757d;
-            color: white;
+    background-color: #6c757d;
+    color: white;
 }
+ 
+/* ── Publication card base ────────────────────────────────────────────────── */
 .publication-item {
-            margin-bottom: 40px;
-            padding-left: 15px;
-            border-left: 3px solid #e9ecef;
-            transition: border-color 0.3s;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    border-left: 3px solid #e9ecef;
+    border-radius: 0;
+    transition: border-color 0.3s;
 }
-.publication-item:hover {
-            border-left-color: #6c757d;
+ 
+/* ── Journal publications → amber / orange ───────────────────────────────── */
+.publication-item.publication-journal {
+    border-left-color: #d4870a;        /* resting amber-orange */
 }
+ 
+.publication-item.publication-journal:hover {
+    border-left-color: #a85f00;        /* darker amber on hover */
+}
+ 
+/* ── Conference publications → dark green ────────────────────────────────── */
+.publication-item.publication-conference {
+    border-left-color: #3a6b1a;        /* resting dark green */
+}
+ 
+.publication-item.publication-conference:hover {
+    border-left-color: #254d0f;        /* deeper green on hover */
+}
+ 
 .upcoming-tag {
-            font-style: italic;
-            color: #6c757d;
-            margin-left: 5px;
+    font-style: italic;
+    color: #6c757d;
+    margin-left: 5px;
 }
-
+ 
 /* Styles for mobile devices */
 @media (max-width: 768px) {
     #profile_picture {
         width: 40%; 
         margin-top: 12%; 
     }
-
+ 
     .navbar-nav .nav-link {
         padding: 10px 0;
         display: block;
         text-align: center;
     }
-
+ 
     .navbar-collapse {
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -271,25 +307,46 @@ h2 code {
         border-radius: 6px;
         overflow: hidden;
     }
-
+ 
     .introduction {
         margin-top: 30px;
     }
-
-    /* Stack Interests and Academia sections vertically */
+ 
     .about.row.w-100 > .col {
-        flex: 0 0 100%; /* Make each column take up full width */
-        max-width: 100%; /* Ensure they stack vertically */
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-
+ 
     footer.mt-auto {
         padding-top: 20px;
-    }  
-
+    }
+ 
+    /* ── Mobile: image stacks above text ── */
+    .publication-item .publication-image-container {
+        height: 120px;          /* slightly shorter on mobile */
+        margin-bottom: 10px;
+    }
+ 
+    /* ── Mobile: smaller text throughout each entry ── */
+    .publication-title {
+        font-size: 0.98rem !important;
+    }
+ 
+    .publication-meta {
+        font-size: 0.82rem !important;
+    }
+ 
+    .abstract-btn {
+        font-size: 0.75rem;
+        padding: 2px 7px;
+    }
+ 
+    .abstract-content pre {
+        font-size: 0.8rem;
+    }
 }
-
+ 
 /* 2. Navbar Container Logic */
-/* Default (Mobile): Full width */
 #navbar-container {
     width: 100%;
     padding-right: 15px;
@@ -297,45 +354,40 @@ h2 code {
     margin-right: auto;
     margin-left: auto;
 }
-
-/* Laptop/Desktop (Large Screens): Restrict to 66% */
+ 
 @media (min-width: 992px) {
     #navbar-container {
-        max-width: 854px; /* 864px - 30px */
+        max-width: 854px;
     }
 }
-
-/* Extra Large Screens (Desktop monitors) */
+ 
 @media (min-width: 1200px) {
     #navbar-container {
-        max-width: 1016px; /* 1026px - 30px */
+        max-width: 1016px;
     }
 }
-
-/* 3. Helper to align text nicely (optional utility) */
+ 
 .text-justify {
     text-align: justify;
 }
-
+ 
 .publication-image-container {
     width: 100%;
-    height: 150px;              /* Fixed height for ALL papers */
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
     border-radius: 8px;
-    /* background-color: #f8f9fa; */
 }
-
+ 
 .publication-image {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    display: block;          /* ✅ ADD THIS */
-    margin: auto;            /* ✅ ADD THIS */
+    display: block;
+    margin: auto;
 }
-
+ 
 .publication-title {
     font-family: 'Inter', sans-serif;
     font-size: 1.23rem;
@@ -343,32 +395,32 @@ h2 code {
     line-height: 1.4;
     margin-bottom: 6px;
 }
-
+ 
 .publication-meta {
     font-family: 'Inter', sans-serif;
     font-size: 0.97rem;
     color: #495057;
 }
-
+ 
 .popout-wrapper {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
-
-/* Default preview */
+ 
 .image-preview {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.95);
-    width: 350px;              /* desktop size */
+    width: 350px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease, transform 0.2s ease;
     z-index: 9999;
     pointer-events: none;
 }
-
+ 
 .image-preview img {
     width: 100%;
     height: auto;
@@ -377,8 +429,7 @@ h2 code {
     background: white;
     padding: 6px;
 }
-
-/* Desktop hover */
+ 
 @media (hover: hover) {
     .popout-wrapper:hover .image-preview {
         opacity: 1;
@@ -386,46 +437,39 @@ h2 code {
         transform: translate(-50%, -50%) scale(1.2);
     }
 }
-
-/* Mobile smaller preview */
+ 
 @media (hover: none) {
     .image-preview {
-        width: 280px;  /* smaller on mobile */
+        width: 280px;
     }
-
+ 
     .popout-wrapper.active .image-preview {
         opacity: 1;
         visibility: visible;
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
-/* Hint styling */
+ 
 .image-hint {
     font-size: 0.75rem;
     color: #6c757d;
     margin-top: 6px;
 }
-
+ 
 .publication-hint {
     font-size: 0.8rem;
     color: #6c757d;
-    margin-top: -25px;   /* pulls it slightly closer to heading */
+    margin-top: -25px;
     margin-bottom: 25px;
 }
-
-/* ===== Mobile content width only (navbar unchanged) ===== */
+ 
 @media (max-width: 768px) {
-
-    /* Reduce container padding for page body */
     body.container {
         padding-left: 8px;
         padding-right: 8px;
     }
-
-    /* Expand main content wrapper */
+ 
     .col-12.mx-auto {
         max-width: 98% !important;
     }
-
 }
