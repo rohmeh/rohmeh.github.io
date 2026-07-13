@@ -4,7 +4,7 @@ function initKNNDemo() {
     // Setup container
     const container = document.getElementById('simulationContainer');
     container.innerHTML = `
-        <div class="knn-container" style="max-width: 900px; margin: 0 auto;">
+        <div class="knn-container" style="max-width: 900px; margin: 0 auto; background-color: #fbfbfc; border: 1px solid #e6e6e6; border-radius: 8px; padding: 24px; margin-bottom: 2rem;">
             <h3 class="text-center mb-3 main_color">K-Nearest Neighbors Interactive Demo</h3>
             
             <div class="row">

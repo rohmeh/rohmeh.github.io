@@ -2,7 +2,7 @@ function initLinearClassificationDemo() {
     console.log("Initializing Linear Classification Demo...");
     const container = document.getElementById('simulationContainer');
     container.innerHTML = `
-        <div class="linear-classification-container" style="max-width: 900px; margin: 0 auto;">
+        <div class="linear-classification-container" style="max-width: 900px; margin: 0 auto; background-color: #fbfbfc; border: 1px solid #e6e6e6; border-radius: 8px; padding: 24px; margin-bottom: 2rem;">
             <h1 class="main_color text-center" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.3rem;">
                 Linear Classifier Demo
             </h1>
