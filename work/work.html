@@ -77,6 +77,42 @@
                         <em>(Hover over the image to magnify it)</em>
                     </p>
 
+                    <!-- CONFERENCE publication (WACV) → dark green border -->
+                    <div class="publication-item publication-conference row align-items-center mb-4">
+
+                        <div class="col-12 col-md-3 mb-3 mb-md-0">
+                            <div class="publication-image-container popout-wrapper insc-spec-zoom">
+                                <img src="/images/INSC-SPEC.jpg" alt="INSC-SPEC"
+                                    class="publication-image">
+                                <div class="image-preview">
+                                    <img src="/images/INSC-SPEC.jpg" alt="Preview">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-9">
+                            <h3 class="publication-title">
+                                INSC-SPEC: Specimen-Level Insect Species Recognition from Multi-View Images and Videos
+                            </h3>
+
+                            <div class="publication-meta">
+                                <strong>Rohan Mehra</strong>, Daphné Démazier, Barthélemy Serres, Sébastien Moreau, Gilles
+                                Venturini<br>
+                                <em><strong>Under Review</strong></em>, 2026
+                            </div>
+
+                            <div class="mt-2">
+                                <button class="abstract-btn" onclick="toggleAbstract('insc-spec')">Abstract</button>
+                            </div>
+
+                            <div id="insc-spec" class="abstract-content">
+                                <pre
+                                    style="white-space: pre-wrap; word-wrap: break-word; text-align: justify;">Fine-grained insect species recognition is critical for automated biodiversity monitoring. Yet, it remains a challenging task for live insects due to factors such as a limited number of available specimens, high class imbalance, and imperfect acquisition conditions. In this paper, we propose INSC-SPEC, a specimen-level model training and evaluation framework that leverages multiple views of each individual to address these challenges. We develop BumB-Spec, a five-species bumblebee dataset with multiple images and videos per specimen acquired both in situ and in laboratory tubes, and curate four additional specimen-level datasets from iNaturalist covering jewelwings, hoverflies, butterflies, and ladybirds. Through quantitative comparisons, ablation studies, and generalization experiments across four models, we show that training with INSC-SPEC achieves superior or comparable performance to image-level training baselines, while specimen-level aggregation consistently improves performance over image-level evaluation, with the largest gains observed on the imbalanced BumB-Spec dataset.</pre>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                     <!-- JOURNAL publication (T-IV) → amber/orange border -->
                     <div class="publication-item publication-journal row align-items-center mb-4">
 

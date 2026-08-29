@@ -449,6 +449,16 @@ h2 code {
         transform: translate(-50%, -50%) scale(1);
     }
 }
+
+.popout-wrapper.insc-spec-zoom .image-preview {
+    width: 500px;   /* was 350px — bump base popup size */
+}
+
+@media (hover: hover) {
+    .popout-wrapper.insc-spec-zoom:hover .image-preview {
+        transform: translate(-50%, -50%) scale(1.4);   /* was 1.2 — bump zoom-in amount */
+    }
+}
  
 .image-hint {
     font-size: 0.75rem;
